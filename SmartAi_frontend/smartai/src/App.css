@@ -1,0 +1,141 @@
+.App{
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tabs{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap : 10px;
+}
+
+button
+{
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: crimson;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover{
+  background-color: rgb(122, 246, 234); 
+  color: black;
+}
+
+button.active
+{
+  background-color: white;
+  color: crimson;
+  border: 2px solid rgb(225, 0, 250);
+}
+
+input
+{
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.tab-content
+{
+  margin-top: 20px;
+}
+
+.image-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid rgb(217, 217, 232);
+}
+.empty-image-slot{
+  height: 0;
+  padding-bottom: 75%;
+  background-color: rgb(235, 235, 243);
+  border-radius: 5px;
+  border: 2px dashed rgb(182, 182, 235);
+}
+
+.output
+{
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(252, 252, 255);
+  text-align: left;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  max-height: 300px;
+  overflow-y: auto; 
+  white-space: pre-wrap;
+  position: relative;
+}
+
+.loading-message {
+  font-size: 1.2rem;
+  color: #ff00d0; /* Orange color for attention */
+  font-weight: bold;
+  text-align: center;
+}
+
+.recipe-text
+{
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-y: auto;
+  line-height: 1.6;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: calc(12px + 0.5vw);
+}
+
+
+.copy-section {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.copy-button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #fcfc02;
+  color: rgb(255, 0, 0);
+  border: none;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #ecef0b;
+}
+
+.copy-success {
+  margin-left: 10px;
+  color: #4caf50;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
